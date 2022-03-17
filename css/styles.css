@@ -254,7 +254,7 @@ a.nav-link{
   width: 90%;
   max-width: 410px;
   height: 20vh;
-  margin-left: 13%;
+  margin-left: 14%;
   margin-top: 10px;
 }
 .logo{
@@ -341,8 +341,13 @@ a.nav-link{
     color: transparent;
     background: transparent;
   }
+
+  .logo{
+    width: 50vw;
+  }
+  
   .logo-tam2{
-    padding-right: 20%;
+    margin-left: -12%;
   }
 }
 
@@ -353,10 +358,6 @@ a.nav-link{
   .miH5{
       display: none;
   }
-  /*.buttom{
-      margin-bottom: 5%;
-      justify-content: center;
-  }*/
   .buttom {
     margin-bottom: -5%;
     height: 40px;
@@ -391,6 +392,7 @@ a.nav-link{
     margin-bottom: 10px;
   }
   .logo-tam2{
+    padding-top: -64px;
     padding-left: 22%;
   }
 }
