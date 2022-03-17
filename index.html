@@ -1,0 +1,464 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Principal</title>
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cantarell:ital@0;1&family=Open+Sans:ital,wght@0,300;1,300&family=Oxygen:wght@300;400&family=Roboto:wght@100&family=Source+Sans+Pro:wght@200&family=Source+Serif+4:wght@300&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script type="text/javascript" src="js/smooth-scroll.min.js"></script>
+    <!-- Función para hacer scroll -->
+    <script>
+      // Todas las animaciones tendrán el efecto 
+      var easeInOutQuad = new SmoothScroll('[data-easing="easeInOutQuad"]', {easing: 'easeInOutQuad'});
+    </script>
+  </head>
+  <body>
+      <!-- NAVBAR -->
+      <header>
+        <nav id="nav" class="navbar navbar-expand-lg navbar-dark fixed-top border-bottom" onclick="toggleMenu()">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logoBlancoIntergloA.png" alt="" width="110%" height="auto">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item" id="inicio">
+                            <a class="nav-link" aria-current="page" data-scroll href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link"  data-easing="easeInOutQuad" href="#certificaciones">Certificaciones</a>
+                      </li>
+                        <li class="nav-item">
+                            <a class="nav-link"  data-easing="easeInOutQuad"  href="#nosotros">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-easing="easeInOutQuad"  href="#noticias">Noticias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Recetas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+       
+        <!--CAROUSEL BACKGROUND IMAGES-->
+      <div id="myCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3500">
+        <div class="carousel-inner"> 
+          <!--VIDEO #3-->
+          <div class="carousel-item active">
+            <div class="carousel-tamanios">
+              <video class="d-block w-100" muted autoplay loop>
+                <source src="videos/videoArroz.mp4" type="video/mp4">
+              </video>
+            </div>
+            <section class="carousel-caption">
+              <div class="container-fluid conteM">
+                <div class="row">
+                  <div class="col-6 mt-1 pt-4 h5 miH5 PaLe">
+                    Comercializadora Inter-Global S.R.L
+                  </div>
+                  <div class="col-6 mt-1 pt-3 moverCol">
+                    <a data-easing="easeInOutQuad"  href="#nosotros" class="buttom" role="button"> Leer más </a>
+                  </div>
+                </div>
+              </div>
+            </section>     
+          </div>
+          <!--Imagen #1-->
+          <div class="carousel-item">
+            <img src="images/arrozSelectoM.jpeg" class="d-block w-100 carousel-tamanios" alt="...">
+
+            <section class="carousel-caption">
+              <div class="container-fluid conteM">
+                <div class="row">
+                  <div class="col-6 mt-1 pt-4 h5 miH5 PaLe">
+                    Comercializadora Inter-Global S.R.L
+                  </div>
+                  <div class="col-6 mt-1 pt-3 moverCol">
+                    <a data-easing="easeInOutQuad"  href="#nosotros" class="buttom" role="button"> Leer más </a>
+                  </div>
+                </div>
+              </div>
+            </section>     
+          </div>
+          <!--VIDEO #4 HARINA-->
+          <div class="carousel-item">
+            <div class="carousel-tamanios">
+              <video class="d-block w-100" muted autoplay loop>
+                <source src="videos/harinacayendo.mp4" type="video/mp4">
+              </video>
+            </div>
+            <section class="carousel-caption">
+              <div class="container-fluid conteM">
+                <div class="row">
+                  <div class="col-6 mt-1 pt-4 h5 miH5 PaLe">
+                    Comercializadora Inter-Global S.R.L
+                  </div>
+                  <div class="col-6 mt-1 pt-3 moverCol">
+                    <a data-easing="easeInOutQuad"  href="#nosotros" class="buttom" role="button"> Leer más </a>
+                  </div>
+                </div>
+              </div>
+            </section>     
+          </div>
+          <!--VIDEO #5 HARINA-->
+          <div class="carousel-item">
+            <div class="carousel-tamanios">
+              <video class="d-block w-100" muted autoplay loop>
+                <source src="videos/harinamuchachas.mp4" type="video/mp4">
+              </video>
+            </div>
+            <section class="carousel-caption">
+              <div class="container-fluid conteM">
+                <div class="row">
+                  <div class="col-6 mt-1 pt-4 h5 miH5 PaLe">
+                    Comercializadora Inter-Global S.R.L
+                  </div>
+                  <div class="col-6 mt-1 pt-3 moverCol">
+                    <a data-easing="easeInOutQuad"  href="#nosotros" class="buttom" role="button"> Leer más </a>
+                  </div>
+                </div>
+              </div>
+            </section>     
+          </div>
+          <!--Imagen #3-->
+          <div class="carousel-item">
+            <img src="images/harianaProductoM.jpeg" class="d-block w-100 carousel-tamanios" alt="...">
+            <section class="carousel-caption">
+              <div class="container-fluid conteM">
+                <div class="row">
+                  <div class="col-6 mt-1 pt-4 h5 miH5 PaLe">
+                    Comercializadora Inter-Global S.R.L
+                  </div>
+                  <div class="col-6 mt-1 pt-3 moverCol">
+                    <a data-easing="easeInOutQuad" href="#nosotros" class="buttom" role="button"> Leer más </a>
+                  </div>
+                </div>
+              </div>
+            </section>     
+          </div>
+          <!--Imagen #4-->
+          <div class="carousel-item">
+            <img src="images/harianaProducto2M.jpeg" class="d-block w-100 carousel-tamanios" alt="...">
+            <section class="carousel-caption">
+              <div class="container-fluid conteM">
+                <div class="row">
+                  <div class="col-6 mt-1 pt-4 h5 miH5 PaLe">
+                    Comercializadora Inter-Global S.R.L
+                  </div>
+                  <div class="col-6 mt-1 pt-3 moverCol">
+                    <a data-easing="easeInOutQuad"  href="#nosotros" class="buttom" role="button"> Leer más </a>
+                  </div>
+                </div>
+              </div>
+            </section>     
+          </div>
+           <!--VIDEO #6 ATARDECER-->
+           <div class="carousel-item">
+            <div class="carousel-tamanios">
+              <video class="d-block w-100" muted autoplay loop>
+                <source src="videos/atardecerM.mp4" type="video/mp4">
+              </video>
+            </div>
+            <section class="carousel-caption">
+              <div class="container-fluid conteM">
+                <div class="row">
+                  <div class="col-6 mt-1 pt-4 h5 miH5 PaLe">
+                    Comercializadora Inter-Global S.R.L
+                  </div>
+                  <div class="col-6 mt-1 pt-3 moverCol">
+                    <a data-easing="easeInOutQuad"  href="#nosotros" class="buttom" role="button"> Leer más </a>
+                  </div>
+                </div>
+              </div>
+            </section>     
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- CERTIFICACIONES -->
+    <main class="container-fluid">
+      <section id="certificaciones" class="row p-1">
+        <div class="col-md-12 h4 justify-content-center p-2 text-center">Implementación y Certificaciones</div>
+        <div class="col-md-12">
+          <!-- Swiper -->
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="images/iso.jpeg" alt="" width="245px" height="145px">
+              <button type="button" class="btn btn-secondary mover" data-bs-container="body" data-bs-toggle="popover" title="Política Energética" data-bs-content="Comercializadora Interglobal Interglo S.R.L., dedicada al procesamiento y comercialización de arroz, harina de arroz y todos sus derivados, es consciente de la importancia del uso eficiente de todos los recursos, por ello adquiere el compromiso de establecer objetivos y metas para procurar la eficiencia en el uso de energía; además velará por el aseguramiento de disponibilidad de información de los recursos necesarios para lograr dichos propósitos y metas energéticas.
+              Interglo se compromete a satisfacer todos los requisitos legales aplicables y relacionados a la eficiencia, uso y consumo de energía, así como a establecer un Sistema de Gestión de Energía para la constante mejora continua en el desempeño y productividad. De igual forma, velará y apoyará la adquisición de productos, servicios y diseños que impacten positivamente el desempeño en el uso de energías.">
+              Ver política  
+            </button>
+            </div>
+              <div class="swiper-slide">
+                <img src="images/primus.jpeg" alt="" width="245px" height="145px">
+                <button type="button" class="btn btn-secondary mover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" title="ISO" data-bs-content="Bottom popover">
+                  Ver política
+                </button>
+            </div>
+              <div class="swiper-slide">
+                <img src="images/Kosher.jpeg" alt="" width="245px" height="145px">
+                <button type="button" class="btn btn-secondary mover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" title="ISO" data-bs-content="Bottom popover">
+                  Ver política
+                </button>
+              </div>
+              <div class="swiper-slide" style="background-image: url(images/arroz2M.jpg);">
+                <img src="images/iso.jpeg" alt=""  width="245px" height="145px">
+                <button type="button" class="btn btn-secondary mover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" title="ISO" data-bs-content="Bottom popover">
+                  Ver política
+                </button>
+              </div>
+          </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+    </section>
+      <!-- SOBRE NOSOTROS -->
+      <section id="nosotros" class="row ps-md-5 pe-md-5" style="height: auto; margin-top: 12%; background-color: rgba(206, 206, 206, 0.568);">
+        <div class="col-md-12 h4 justify-content-center p-2 text-center">Sobre nosotros</div>
+        <div class="col-md-6" style="height: 100%;"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam maiores dolores aliquam saepe, veritatis autem odit voluptatibus ex fugiat maxime officia, doloribus illum omnis reiciendis quibusdam. Perferendis, minima sed! Provident?
+             Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae veritatis provident minus velit illo, maxime non praesentium quisquam quibusdam enim, quis a reprehenderit ipsam quidem vel corporis fuga ad nostrum?</p></div>
+        <div class="col-md-6 align" style="height: 100%;"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi magni eius pariatur ipsam porro, tenetur, ullam quis facilis consequatur consectetur ab voluptatum. Ut id iure a modi molestiae quibusdam? Nemo.</p></div>
+      </section>  
+
+      <!-- EFECTO PARALLAX-->
+      <section class="row efecto">
+        <div class="parallax"></div>
+      </section>
+      <!-- NOTICIAS -->
+      <div class="row p-2">
+        <div id="noticias" class="col-md-12 h4 justify-content-center text-center">Noticias</div>
+         <!--CARDS #1-->
+         <div class="col-md-4">
+          <div class="card mb-3" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-5">
+                  <img src="images/arroz2M.jpg" class="img-fluid rounded-start heWiImaCards" alt="...">
+                </div>
+                <div class="col-md-7">
+                  <div class="card-body">
+                    <h5 class="card-title">CARD 1</h5>
+                    <p class="card-text align">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>            
+      </div>
+      <!--CARDS #2-->
+      <div class="col-md-4">
+          <div class="card mb-3" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-5">
+                  <img src="images/arroz3M.jpg" class="img-fluid rounded-start heWiImaCards" alt="...">
+                </div>
+                <div class="col-md-7">
+                  <div class="card-body">
+                    <h5 class="card-title">CARD 2</h5>
+                    <p class="card-text align">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>         
+      </div>
+       <!--CARDS #3-->
+      <div class="col-md-4">
+          <div class="card mb-3" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-5">
+                  <img src="images/arroz1M.jpg" class="img-fluid rounded-start heWiImaCards" alt="...">
+                </div>
+                <div class="col-md-7">
+                  <div class="card-body">
+                    <h5 class="card-title">CARD 3</h5>
+                    <p class="card-text align">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>         
+      </div>
+       <!-- PRODUCTOS -->
+    <section class="row">
+      <div class="col-md-12 h4 justify-content-center p-2 text-center">Productos</div>
+      <div class="col-md-12">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus necessitatibus amet vitae dolorum suscipit, enim porro soluta molestiae aut ad, nobis sint! Dolore earum atque minus aspernatur obcaecati itaque ipsa?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error neque quis accusamus a minus qui eos cupiditate quia, nemo iure! Fugiat, quas ratione. Ad debitis facere, fugiat ea accusantium necessitatibus!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore esse numquam, doloremque incidunt explicabo accusamus omnis tempora excepturi iste beatae voluptatibus, voluptates laboriosam eos magnam, nihil optio quia corporis voluptate?
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi quae nesciunt id necessitatibus distinctio aliquid neque rem eveniet quis repellat, incidunt provident illum, eum ut saepe totam? Hic, eligendi quibusdam.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum possimus magnam nesciunt impedit, dolor consequatur nisi vero architecto perferendis itaque vitae doloribus mollitia? Explicabo facilis aut necessitatibus tempora magnam maiores.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quaerat cumque assumenda consectetur esse obcaecati at? Doloribus cupiditate optio, ratione minima nobis inventore commodi magnam eaque molestiae laborum consequuntur iure?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo aliquam, id minima eius similique error aut excepturi quasi vitae nam tempore, eaque itaque accusantium fugiat quam nesciunt sapiente. Adipisci, magnam.
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti non doloribus earum dolores fuga quia nihil, eius minima sit et veniam error aut? Vitae hic quidem modi blanditiis sapiente corrupti.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, deleniti. Quisquam dolorum nostrum rerum ullam mollitia eos, dolorem vero reprehenderit blanditiis voluptate ab beatae obcaecati ipsa libero quam, similique consectetur.
+        Lor em ipsum dolor sit amet, consectetur adipisicing elit. Fugiat magni tenetur ipsam ut voluptatibus, quas quo autem sunt, modi itaque mollitia accusamus cupiditate rerum in ullam quis iste at veniam?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui nulla harum nostrum atque, nesciunt hic laborum, officiis repellat mollitia iste ipsa impedit dignissimos, sapiente reiciendis quia optio corporis ut maiores.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id voluptatum perferendis sequi nesciunt necessitatibus obcaecati repudiandae quisquam facere! Saepe voluptatibus eos, a quaerat cupiditate quam soluta? Sit repudiandae molestiae magnam.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur doloribus unde temporibus optio aperiam exercitationem provident qui, quia voluptates beatae illo dolore laudantium architecto iste ut in sunt deserunt corrupti.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ut repellendus perspiciatis vitae ipsa dicta repudiandae provident molestiae fuga mollitia doloribus, cupiditate dolores delectus velit ab hic architecto, eius debitis.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, facilis distinctio corporis aliquam quia officia aperiam magni commodi autem, hic, provident illo doloremque quod dolorem voluptatum voluptas velit quo. Obcaecati!
+      </div>
+    </section>
+    <!-- RECETAS -->
+    <section class="row">
+      <div class="col-md-12 h4 justify-content-center p-2 text-center">Recetas</div>
+      <div class="col-md-12">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus necessitatibus amet vitae dolorum suscipit, enim porro soluta molestiae aut ad, nobis sint! Dolore earum atque minus aspernatur obcaecati itaque ipsa?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error neque quis accusamus a minus qui eos cupiditate quia, nemo iure! Fugiat, quas ratione. Ad debitis facere, fugiat ea accusantium necessitatibus!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore esse numquam, doloremque incidunt explicabo accusamus omnis tempora excepturi iste beatae voluptatibus, voluptates laboriosam eos magnam, nihil optio quia corporis voluptate?
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi quae nesciunt id necessitatibus distinctio aliquid neque rem eveniet quis repellat, incidunt provident illum, eum ut saepe totam? Hic, eligendi quibusdam.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum possimus magnam nesciunt impedit, dolor consequatur nisi vero architecto perferendis itaque vitae doloribus mollitia? Explicabo facilis aut necessitatibus tempora magnam maiores.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quaerat cumque assumenda consectetur esse obcaecati at? Doloribus cupiditate optio, ratione minima nobis inventore commodi magnam eaque molestiae laborum consequuntur iure?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo aliquam, id minima eius similique error aut excepturi quasi vitae nam tempore, eaque itaque accusantium fugiat quam nesciunt sapiente. Adipisci, magnam.
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti non doloribus earum dolores fuga quia nihil, eius minima sit et veniam error aut? Vitae hic quidem modi blanditiis sapiente corrupti.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, deleniti. Quisquam dolorum nostrum rerum ullam mollitia eos, dolorem vero reprehenderit blanditiis voluptate ab beatae obcaecati ipsa libero quam, similique consectetur.
+        Lor em ipsum dolor sit amet, consectetur adipisicing elit. Fugiat magni tenetur ipsam ut voluptatibus, quas quo autem sunt, modi itaque mollitia accusamus cupiditate rerum in ullam quis iste at veniam?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui nulla harum nostrum atque, nesciunt hic laborum, officiis repellat mollitia iste ipsa impedit dignissimos, sapiente reiciendis quia optio corporis ut maiores.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id voluptatum perferendis sequi nesciunt necessitatibus obcaecati repudiandae quisquam facere! Saepe voluptatibus eos, a quaerat cupiditate quam soluta? Sit repudiandae molestiae magnam.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur doloribus unde temporibus optio aperiam exercitationem provident qui, quia voluptates beatae illo dolore laudantium architecto iste ut in sunt deserunt corrupti.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ut repellendus perspiciatis vitae ipsa dicta repudiandae provident molestiae fuga mollitia doloribus, cupiditate dolores delectus velit ab hic architecto, eius debitis.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, facilis distinctio corporis aliquam quia officia aperiam magni commodi autem, hic, provident illo doloremque quod dolorem voluptatum voluptas velit quo. Obcaecati!
+      </div>
+    </section>
+    <!-- CONTACTO -->
+    <section class="row">
+      <div class="col-md-12 h4 justify-content-center p-2 text-center">Contacto</div>
+      <div class="col-md-12">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus necessitatibus amet vitae dolorum suscipit, enim porro soluta molestiae aut ad, nobis sint! Dolore earum atque minus aspernatur obcaecati itaque ipsa?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error neque quis accusamus a minus qui eos cupiditate quia, nemo iure! Fugiat, quas ratione. Ad debitis facere, fugiat ea accusantium necessitatibus!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore esse numquam, doloremque incidunt explicabo accusamus omnis tempora excepturi iste beatae voluptatibus, voluptates laboriosam eos magnam, nihil optio quia corporis voluptate?
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi quae nesciunt id necessitatibus distinctio aliquid neque rem eveniet quis repellat, incidunt provident illum, eum ut saepe totam? Hic, eligendi quibusdam.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum possimus magnam nesciunt impedit, dolor consequatur nisi vero architecto perferendis itaque vitae doloribus mollitia? Explicabo facilis aut necessitatibus tempora magnam maiores.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quaerat cumque assumenda consectetur esse obcaecati at? Doloribus cupiditate optio, ratione minima nobis inventore commodi magnam eaque molestiae laborum consequuntur iure?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo aliquam, id minima eius similique error aut excepturi quasi vitae nam tempore, eaque itaque accusantium fugiat quam nesciunt sapiente. Adipisci, magnam.
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti non doloribus earum dolores fuga quia nihil, eius minima sit et veniam error aut? Vitae hic quidem modi blanditiis sapiente corrupti.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, deleniti. Quisquam dolorum nostrum rerum ullam mollitia eos, dolorem vero reprehenderit blanditiis voluptate ab beatae obcaecati ipsa libero quam, similique consectetur.
+        Lor em ipsum dolor sit amet, consectetur adipisicing elit. Fugiat magni tenetur ipsam ut voluptatibus, quas quo autem sunt, modi itaque mollitia accusamus cupiditate rerum in ullam quis iste at veniam?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui nulla harum nostrum atque, nesciunt hic laborum, officiis repellat mollitia iste ipsa impedit dignissimos, sapiente reiciendis quia optio corporis ut maiores.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id voluptatum perferendis sequi nesciunt necessitatibus obcaecati repudiandae quisquam facere! Saepe voluptatibus eos, a quaerat cupiditate quam soluta? Sit repudiandae molestiae magnam.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur doloribus unde temporibus optio aperiam exercitationem provident qui, quia voluptates beatae illo dolore laudantium architecto iste ut in sunt deserunt corrupti.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ut repellendus perspiciatis vitae ipsa dicta repudiandae provident molestiae fuga mollitia doloribus, cupiditate dolores delectus velit ab hic architecto, eius debitis.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, facilis distinctio corporis aliquam quia officia aperiam magni commodi autem, hic, provident illo doloremque quod dolorem voluptatum voluptas velit quo. Obcaecati!
+      </div>
+    </section>
+    </main>
+      <!--Footer -->
+      <footer class="site-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6 col-md-6 logo-tam2">
+              <img src="images/logoBlancoIntergloA.png" alt="..." class="logo">
+              <h6 class="pt-4">Contáctanos</h6>
+              <p id="tamP">Teléfono:</p>
+              <p>Correo: </p>
+            </div>
+        
+            <div class="col-xs-12 col-md-6">
+              <h6 class="text-center">Ubicación</h6>
+              <iframe class="footer-map embed-responsive-16by9 d-flex justify-content-center" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.3212399819186!2d-84.71667688588897!3d9.99030097594396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0311e94397891%3A0x671068531712afab!2sArrocera%20Interglo!5e0!3m2!1ses!2scr!4v1647021374788!5m2!1ses!2scr" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+          </div>
+          <hr>
+        </div>
+
+
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 col-sm-6 col-xs-12">
+              <p class="copyright-text">Copyright &copy; 2022 All Rights Reserved by ... <a href="#"></a></p>
+            </div>
+  
+            <div class="col-md-4 col-sm-6 col-xs-12">
+              <ul class="social-icons">
+                <li><a class="facebook" href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a class="twitter" href="#"><i class="fa-brands fa-twitter-square"></i></a></li>
+                <li><a class="instagram" href="#"><i class="fa-brands fa-instagram-square"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+  </footer>
+     <!-- Libraries -->
+     <script src="js/jquery-3.6.0.min.js"></script>
+     <script src="js/popper.min.js"></script>
+     <script src="js/bootstrap.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+     <script type="text/javascript" src="js/scroll.js"></script>
+     <script type="text/javascript" src="js/carouselVideos.js"></script>
+     <script type="text/javascript" src="js/parallax.js"></script>
+     
+     <!-- Initialize Popover Bootstrap -->
+     <script>
+       $(function(){
+       $('[data-bs-toggle="popover"]').popover({
+        placement: 'bottom',
+        trigger: 'hover',
+        delay: 500
+       })
+     });
+     </script>
+       
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 20,
+          stretch: 0,
+          depth: 700,
+          modifier: 1,
+          slideShadows: true,
+        },
+        autoplay: {
+          delay: 6000,
+          disableOnInteraction: true,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        }
+      });
+      var mySwiper = document.querySelector('.mySwiper').swiper
+
+      $(".mySwiper").mouseenter(function() {
+        mySwiper.autoplay.stop();
+        console.log('slider stopped');
+      });
+
+      $(".mySwiper").mouseleave(function() {
+        mySwiper.autoplay.start();
+        console.log('slider started again');
+      });
+    </script>
+  </body>
+</html>
