@@ -252,11 +252,11 @@ a.nav-link{
 /*Mapa footer*/
 .footer-map{
   width: 90%;
-  max-width: 410px;
-  height: 20vh;
-  margin-left: 10%;
-  margin-top: 10px;
+  max-width: 500px;
+  height: 50vh;
+  margin-left: 5%;
 }
+
 .logo{
   width: 100%;
   max-width: 300px;
@@ -327,9 +327,9 @@ a.nav-link{
 }
 
 /*MEDIAQUERYS*/
-@media screen and (max-width: 485px) {
-  .logo{
-    margin-left: px;
+@media screen and (min-width: 500px) {
+  .footer-map{
+    margin-left: 50%;
   }
 }
 
@@ -394,9 +394,6 @@ a.nav-link{
   }
   
   .footer-map{
-    padding-left: 2%;
-    width: 58vw;
-    height: 35vh;
     margin-bottom: 10px;
   }
   .logo{
