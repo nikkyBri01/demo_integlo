@@ -328,8 +328,8 @@ a.nav-link{
 
 /*MEDIAQUERYS*/
 @media screen and (max-width: 485px) {
-  .logo-tam2{
-    margin-left: -6%;
+  .logo{
+    margin-left: px;
   }
 }
 
@@ -344,10 +344,17 @@ a.nav-link{
 
   .logo{
     width: 50vw;
+    margin-left: 25%;
   }
-  
+
   .logo-tam2{
-    margin-left: -12%;
+   display: inline-block; 
+  }
+  #tamP{
+    text-align: center;
+  }
+  #tamP2{
+    text-align: center;
   }
 }
 
