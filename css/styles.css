@@ -183,7 +183,7 @@ a.nav-link{
 }
 .swiper-button-next, .swiper-button-prev {
   position: absolute;
-  top: 50%;
+  top: 35%;
   color: rgb(164, 197, 22);
 }
 .swiper-pagination-bullet-active {
