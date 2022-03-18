@@ -148,10 +148,9 @@ a.nav-link{
 }
 
 /*TAMAÑO CARDS BOOTSTRAP*/
-.heWiImaCards{
-  height: 100%;
+.imagen{
   width: 100%;
-
+  height: 100%;
 }
 
 /*CAROUSEL 3D SWIPER*/
