@@ -4,7 +4,7 @@ myCarousel.addEventListener('slid.bs.carousel', function () {
   var elemento = $('myCarousel .carousel-item-active').first();
   if (elemento.prop("tagName") == "video") {
     elemento.get(0).play();
-    //elemento.get(0).load();//
+    elemento.get(0).load();
   }
 })
 
