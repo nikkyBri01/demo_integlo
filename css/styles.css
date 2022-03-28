@@ -262,7 +262,7 @@ a.nav-link{
 .slick-arrow{
   border-radius: 30px;
   background-color: white;
-  position: absolute;
+  position: relative;
   z-index: 4;
   width: 30px;
   height: 30px;
