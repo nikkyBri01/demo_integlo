@@ -193,7 +193,8 @@ a.nav-link{
 /*Carrusel #3 en linea*/
 .Carousel{
   width: 100%;
-  margin: 0px 60px;
+  padding: 0px 55px;
+  position: relative;
 } 
 
 /*Images*/
@@ -262,7 +263,8 @@ a.nav-link{
 .slick-arrow{
   border-radius: 30px;
   background-color: white;
-  position: relative;
+  position: absolute;
+  opacity: 0.9;
   z-index: 4;
   width: 30px;
   height: 30px;
@@ -270,8 +272,9 @@ a.nav-link{
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .15);
   border: 0;
   cursor: pointer;
+  top: 50%;
+  transform: translateY(-50%);
 }
-
 
 .slick-arrow:focus{
   outline: 0;
