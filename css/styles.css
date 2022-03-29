@@ -204,31 +204,23 @@ a.nav-link{
   display: flex;
   align-items: center;
   width: fit-content;
-  height: 304px;
   padding: 10px 0px;
-  margin: 0px auto;
+  /*margin: 0px auto;*/
   margin-left: -4.5%;
   max-width: 95vw;
   overflow: hidden;
-}
-
-.slick-track{
-  position: relative;
-  left: 0;
-  top: 0;
-  display: flex;
   justify-content: center;
   transition: .5s ease-in-out;
+  
 }
 
 .slick{
   position: relative;
-  width: 275px;
+  width: 500px;
   padding: 0 18px;
   float: left;
   box-sizing: border-box;
   display: flex;
-  height: 100%;
 }
 
 .slick h4{
@@ -246,9 +238,9 @@ a.nav-link{
 }
 
 .slick img{
-  object-fit: cover;
-  height: 300px;
-  width: 100%;
+  object-fit: fill;
+  height: 280px; 
+  width: 245px;
   border-radius: 4px;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .5);
   transition: .3 ease-in-out;

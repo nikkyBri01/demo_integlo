@@ -21,7 +21,7 @@ var carousel = new bootstrap.Carousel(myCarousel2, {
   pause: false
 })
 
-/*Carousel de productos botones*/
+/*Carousel de productos botones
 function App() {}
 
 window.onload = function (event) {
@@ -56,12 +56,47 @@ let nextAction = (leftPosition,trackWidth,listWidth,slickWidth,track) => {
     if(leftPosition < (trackWidth - listWidth)) {
         track.style.left = `${-1 * (leftPosition + slickWidth)}px`;
     }
-}
+}*/
 
 /*Autoplay carrusel*/
 const carrusel = document.querySelector(".slick-list");
+let sliders = document.querySelectorAll(".slick");
+let sliderFinal = sliders[sliders.length -1];
 
-let maxScrollLeft = carrusel.scrollWidth - carrusel.clientWidth;
+const btn_prev = document.getElementById('buttom-prev');
+const btn_next = document.getElementById('buttom-next');
+
+//Metodo de movimiento de slides
+carrusel.insertAdjacentElement('afterbegin', sliderFinal);
+function moverNext(){
+  let sliderUno = document.querySelectorAll(".slick")[0];
+  carrusel.style.marginLeft = "-10%";
+  carrusel.style.transition = "all 0.9s";
+  setTimeout(function(){
+    carrusel.style.transition = "none";
+    carrusel.insertAdjacentElement("beforeend", sliderUno);
+    carrusel.style.marginLeft = "-4.5%";
+  }, 500);
+}
+
+function moverPrev(){
+  let sliders = document.querySelectorAll(".slick");
+  let sliderFinal = sliders[sliders.length -1];
+  carrusel.style.marginLeft = "0%";
+  carrusel.style.transition = "all 0.9s";
+  setTimeout(function(){
+    carrusel.style.transition = "none";
+    carrusel.insertAdjacentElement('afterbegin', sliderFinal);
+    carrusel.style.marginLeft = "-4.5%";
+  }, 500);
+}
+
+setInterval(function(){
+  moverNext()
+}, 3000);
+
+
+/*let maxScrollLeft = carrusel.scrollWidth - carrusel.clientWidth;
 let intervalo = null;
 let step = 1;
 const start = () => {
@@ -90,5 +125,7 @@ carrusel.addEventListener("mouseout", () => {
 start();
 
 
-
+/*SEGUIR VIENDO EN EL MINUTO 16:11
+https://www.youtube.com/watch?v=WI0aCIEYXvw
+*/
 
