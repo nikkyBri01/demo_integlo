@@ -215,28 +215,28 @@
         <div class="col-md-12 h4 justify-content-center p-2 text-center">Implementación y Certificaciones</div>
         <div class="col-md-12">
           <!-- Swiper -->
-          <div class="swiper mySwiper">
+          <div class="swiper ptl mySwiper">
             <div class="swiper-wrapper">
-              <div class="swiper-slide">
+              <div class="swiper-slide sw1">
                 <img src="images/iso.jpeg" alt="" width="245px" height="145px">
               <button type="button" class="btn btn-secondary mover" data-bs-container="body" data-bs-toggle="popover" title="Política Energética" data-bs-content="Comercializadora Interglobal Interglo S.R.L., dedicada al procesamiento y comercialización de arroz, harina de arroz y todos sus derivados, es consciente de la importancia del uso eficiente de todos los recursos, por ello adquiere el compromiso de establecer objetivos y metas para procurar la eficiencia en el uso de energía; además velará por el aseguramiento de disponibilidad de información de los recursos necesarios para lograr dichos propósitos y metas energéticas.
               Interglo se compromete a satisfacer todos los requisitos legales aplicables y relacionados a la eficiencia, uso y consumo de energía, así como a establecer un Sistema de Gestión de Energía para la constante mejora continua en el desempeño y productividad. De igual forma, velará y apoyará la adquisición de productos, servicios y diseños que impacten positivamente el desempeño en el uso de energías.">
               Ver política  
             </button>
             </div>
-              <div class="swiper-slide">
+              <div class="swiper-slide sw1">
                 <img src="images/primus.jpeg" alt="" width="245px" height="145px">
                 <button type="button" class="btn btn-secondary mover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" title="ISO" data-bs-content="Bottom popover">
                   Ver política
                 </button>
             </div>
-              <div class="swiper-slide">
+              <div class="swiper-slide sw1">
                 <img src="images/Kosher.jpeg" alt="" width="245px" height="145px">
                 <button type="button" class="btn btn-secondary mover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" title="ISO" data-bs-content="Bottom popover">
                   Ver política
                 </button>
               </div>
-              <div class="swiper-slide" style="background-image: url(images/arroz2M.jpg);">
+              <div class="swiper-slide sw1" style="background-image: url(images/arroz2M.jpg);">
                 <img src="images/iso.jpeg" alt=""  width="245px" height="145px">
                 <button type="button" class="btn btn-secondary mover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" title="ISO" data-bs-content="Bottom popover">
                   Ver política
@@ -319,64 +319,20 @@
        <!-- PRODUCTOS -->
     <section class="row">
       <div class="col-md-12 h4 justify-content-center p-2 text-center">Productos</div>
-        <div class="col-md-12 border border-danger justify-content-start">
-          <div class="Carousel">
-            <button class="slick-arrow slick-prev" id="buttom-prev" data-button="buttom-prev" onclick="moverPrev()">
-              <i class="fa-solid fa-circle-arrow-left"></i>
-            </button>
-            <div class="slick-list" id="slick-list">
-              
-                  <div class="slick">
-                  <div>
-                    <h4><small>Descripción</small></h4>
-                    <picture>
-                      <img src="images/arroz1M.jpg" alt="" width="250px" height="200px" alt="">
-                    </picture>
-                  </div>
-                </div>
-    
-                <div class="slick">
-                  <div>
-                    <h4><small>Descripción</small></h4>
-                    <picture>
-                      <img src="images/arroz2M.jpg" alt="" width="250px" height="200px" alt="">
-                    </picture>
-                  </div>
-                </div>
-    
-                <div class="slick">
-                  <div>
-                    <h4><small>Descripción</small></h4>
-                    <picture>
-                      <img src="images/arroz3M.jpg" alt="" width="250px" height="200px" alt="">
-                    </picture>
-                  </div>
-                </div>
-    
-                <div class="slick">
-                  <div>
-                    <h4><small>Descripción</small></h4>
-                    <picture>
-                      <img src="images/arrozCuchara.jpeg" alt="" width="250px" height="200px" alt="">
-                    </picture>
-                    </div>
-                  </div>
-    
-                <div class="slick">
-                  <div>
-                    <h4><small>Descripción</small></h4>
-                    <picture>
-                      <img src="images/arrozSelecto.jpeg" alt="" width="250px" height="200px" alt="">
-                    </picture>
-                  </div>
-                </div>
-             
-            </div>
-            <button class="slick-arrow slick-next" id="buttom-next" data-button="buttom-next" onclick="moverNext()" >
-              <i class="fa-solid fa-circle-arrow-right"></i>
-            </button>
-          </div>
-        </div>
+      <div class="col-md-12">
+        <!-- Swiper #2 Productos -->
+    <div class="swiper mySwiper2">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide sw2"><img src="images/arroz1M.jpg" alt="" class="img"></div>
+        <div class="swiper-slide sw2"><img src="images/arroz2M.jpg" alt="" class="img"></div>
+        <div class="swiper-slide sw2"><img src="images/arroz3M.jpg" alt="" class="img"></div>
+        <div class="swiper-slide sw2"><img src="images/arrozCuchara.jpeg" alt="" class="img"></div>
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-next next"></div>
+      <div class="swiper-button-prev prev"></div>
+    </div>
+      </div>
     </section>
     <!-- RECETAS -->
     <section class="row">
@@ -468,7 +424,8 @@
      <script type="text/javascript" src="js/scroll.js"></script>
      <script type="text/javascript" src="js/carouselVideos.js"></script>
      <script type="text/javascript" src="js/parallax.js"></script>
-     
+     <script type="text/javascript" src="js/swiper.js"></script>
+
      <!-- Initialize Popover Bootstrap -->
      <script>
        $(function(){
@@ -479,45 +436,5 @@
        })
      });
      </script>
-       
-    <!-- Initialize Swiper -->
-    <script>
-      var swiper = new Swiper(".mySwiper", {
-        effect: "coverflow",
-        grabCursor: true,
-        centeredSlides: true,
-        slidesPerView: "auto",
-        coverflowEffect: {
-          rotate: 20,
-          stretch: 0,
-          depth: 700,
-          modifier: 1,
-          slideShadows: true,
-        },
-        autoplay: {
-          delay: 6000,
-          disableOnInteraction: true,
-        },
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        }
-      });
-      var mySwiper = document.querySelector('.mySwiper').swiper
-
-      $(".mySwiper").mouseenter(function() {
-        mySwiper.autoplay.stop();
-        console.log('slider stopped');
-      });
-
-      $(".mySwiper").mouseleave(function() {
-        mySwiper.autoplay.start();
-        console.log('slider started again');
-      });
-    </script>
   </body>
 </html>
