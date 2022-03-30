@@ -177,6 +177,7 @@ a.nav-link{
   height: 250px;
   width: 250px;
   margin-bottom: 50px;
+  margin-top: 50px;
 }
 
 .swiper-slide img {
@@ -199,7 +200,7 @@ a.nav-link{
 }
 
 .next, .prev{
-  top: 40%;
+  top: 50%;
 }
 .swiper-pagination-bullet-active {
   opacity: var(--swiper-pagination-bullet-opacity, 1);
