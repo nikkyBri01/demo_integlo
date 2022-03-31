@@ -582,8 +582,8 @@ a.nav-link{
 
 
 :root {
-  --marquee-width: 100vw;
-  --marquee-height: 32vh;
+  --marquee-width: 100%;
+  --marquee-height: 35vh;
   /* --marquee-elements: 12; */ /* defined with JavaScript */
   --marquee-elements-displayed: 5;
   --marquee-element-width: calc(var(--marquee-width) / var(--marquee-elements-displayed));
@@ -629,9 +629,11 @@ a.nav-link{
   display: flex;
   justify-content: center;
   align-items: center;
+  /* text-align: center; */
   flex-shrink: 0;
   width: var(--marquee-element-width);
   max-height: 100%;
+  font-size: calc(var(--marquee-height)*3/4); /* 5rem; */
   white-space: nowrap;
   margin: 5px;
 }
@@ -639,6 +641,8 @@ a.nav-link{
 .marquee-content li img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
+  border-radius: 2px;
 }
 
 @media (max-width: 600px) {
@@ -658,4 +662,3 @@ a.nav-link{
   }
   .marquee:before, .marquee:after { width: 5rem; }
 }
-
