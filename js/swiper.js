@@ -36,7 +36,7 @@ var swiper = new Swiper(".mySwiper", {
     console.log('slider started again');
   });
 
-  //SWIPER PRODUCTOS
+  /*SWIPER PRODUCTOS
   var swiper = new Swiper(".mySwiper2", {
     slidesPerView: 1,
     spaceBetween: 10,
@@ -75,4 +75,4 @@ var swiper = new Swiper(".mySwiper", {
   $(".mySwiper2").mouseleave(function() {
     mySwiper.autoplay.start();
     console.log('slider started again');
-  });
+  });*/

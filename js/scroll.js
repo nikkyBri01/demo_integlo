@@ -31,10 +31,10 @@ window.addEventListener("scroll", () => {
       let UbiA = window.pageYOffset;
       if(ubiP > UbiA){
           document.getElementById('nav').style.top = '0px';
-          console.log('Ubicacion Principal')
+          /*console.log('Ubicacion Principal')
           console.log(ubiP)
           console.log('desplazamiento')
-          console.log(UbiA)
+          console.log(UbiA)*/
       }
       else{
           document.getElementById('nav').style.top = '-95px';
