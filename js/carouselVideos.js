@@ -32,7 +32,6 @@ for(let i=0; i<marqueeElementsDisplayed; i++) {
   marqueeContent.appendChild(marqueeContent.children[i].cloneNode(true));
 }
 
-
 /*/TOUCH EVENTS
 const slide = document.querySelector(".marquee"), 
 slider = Array.from(document.querySelector(".marquee-content"))
@@ -96,3 +95,6 @@ function animation(){
 function setSliderPosition(){
   slide.style.transform = `translateX(${currentTranslate}px)`
 }*/
+
+
+     
