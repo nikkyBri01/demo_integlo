@@ -490,6 +490,11 @@ a.nav-link{
   :root {
     --marquee-height: 100%;
   }
+
+  .marquee-content li {
+    width: 70%;
+  }
+
   .marquee:before, .marquee:after { width: 5rem; }
 
   .pb-52 {
@@ -510,6 +515,5 @@ a.nav-link{
 
   .marquee-content li {
     margin-left: 10px;
-    width: 45%;
   }
 }
