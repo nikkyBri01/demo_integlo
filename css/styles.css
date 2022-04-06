@@ -280,7 +280,7 @@ a.nav-link{
 
 @keyframes scrolling {
   0% { transform: translateX(0);}
-  100% { transform: translateX(calc(-1 * var(--marquee-element-width) * var(--marquee-elements))); }
+  100% { transform: translateX(calc(-1 * 200px * var(--marquee-elements))); }
 }
 .marquee-content li {
   display: flex;
@@ -510,6 +510,6 @@ a.nav-link{
 
   .marquee-content li {
     margin-left: 10px;
-    width: 40%;
+    width: 200px;
   }
 }
