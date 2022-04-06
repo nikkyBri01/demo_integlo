@@ -411,7 +411,14 @@ a.nav-link{
       background-image: url(images/arroz1.jpg);
   */
 }
-
+.pb-52 {
+  padding-bottom: 7rem !important;
+  padding-top: 2rem !important;
+}
+.mtS {
+  margin-top: -28px;
+  margin-bottom: 30px;
+}
 :root {
   --marquee-width: 100%;
   --marquee-height: 35vh;
@@ -465,7 +472,7 @@ a.nav-link{
   width: var(--marquee-element-width);
   max-height: 100%;
   white-space: nowrap;
-  margin: 5px;
+  margin-left: 30px;
 }
 
 .marquee-content li img {
@@ -477,18 +484,29 @@ a.nav-link{
 
 @media (max-width: 600px) {
   :root {
-    --marquee-width: 100vw;
-    --marquee-height: 16vh;
+    --marquee-width: 100%;
+    --marquee-height: 100%;
     --marquee-elements-displayed: 3;
   }
   .marquee:before, .marquee:after { width: 5rem; }
+  .marquee-content li {
+    margin-left: 10px;
+  }
+  .pb-52 {
+    padding-bottom: 64px !important;
+    padding-top: 2rem !important;
+  }
+  .mtS {
+    margin-top: -28px;
+    margin-bottom: 10px;
+  }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 996px) {
   :root {
-    --marquee-width: 100vw;
+    --marquee-width: 100%;
     --marquee-height: 100%;
-    --marquee-elements-displayed: 3;
+    --marquee-elements-displayed: 4;
   }
   .marquee:before, .marquee:after { width: 5rem; }
 }
