@@ -469,7 +469,7 @@ a.nav-link{
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
-  width: 350px;
+  width: 300px;
   max-height: 100%;
   white-space: nowrap;
   margin-left: 30px;
@@ -486,12 +486,11 @@ a.nav-link{
   :root {
     --marquee-width: 100%;
     --marquee-height: 100%;
-    
   }
   .marquee:before, .marquee:after { width: 5rem; }
   .marquee-content li {
     margin-left: 5px;
-    width: 290px; 
+    width: 250px; 
   }
   .pb-52 {
     padding-bottom: 64px !important;
@@ -507,7 +506,8 @@ a.nav-link{
   :root {
     --marquee-width: 100%;
     --marquee-height: 100%;
-    --marquee-elements-displayed: 3;
+    --marquee-animation-duration: calc(var(--marquee-elements) * 4s);
+    --marquee-elements-displayed: 5;
   }
   .marquee:before, .marquee:after { width: 5rem; }
 
