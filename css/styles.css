@@ -241,7 +241,7 @@ a.nav-link{
   --marquee-width: 100%;
   --marquee-height: 35vh;
   /* --marquee-elements: 7; */ /* definido con JavaScript */
-  --marquee-elements-displayed: 4;
+  --marquee-elements-displayed: 5;
   --marquee-element-width: calc(var(--marquee-width) / var(--marquee-elements-displayed));
   --marquee-animation-duration: calc(var(--marquee-elements) * 6s);
 }
@@ -510,6 +510,6 @@ a.nav-link{
 
   .marquee-content li {
     margin-left: 10px;
-    width: 200px;
+    width: 45%;
   }
 }
