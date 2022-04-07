@@ -158,6 +158,10 @@ a.nav-link{
   color: white;
 }
 
+.card{
+  border: 1px solid rgba(164,197,22,.5);
+}
+
 /*CAROUSEL 3D SWIPER*/
 .swiper {
   width: 100%;
