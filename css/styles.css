@@ -486,7 +486,7 @@ a.nav-link{
   */
 }
 
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   :root {
     --marquee-height: 100%;
   }
