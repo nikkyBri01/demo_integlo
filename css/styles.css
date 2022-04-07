@@ -282,9 +282,9 @@ a.nav-link{
   animation-play-state: paused;
 } 
 
-.runn .marquee-content{
+/*.runn .marquee-content{
   animation-play-state: running;
-}
+}*/
 
 @keyframes scrolling {
   0% { transform: translateX(0);}
