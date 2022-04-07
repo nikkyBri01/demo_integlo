@@ -495,6 +495,10 @@ a.nav-link{
   .navbar{
       background-color: rgba(0, 0, 0, 1.1);
   }
+  .navbar-dark .navbar-toggler {
+    color: rgb(0 0 0 / 15%);
+    border-color: rgba(164, 197, 22, 0.6 );
+}
 }
 
 @media (max-width: 500px) {
