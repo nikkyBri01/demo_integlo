@@ -1,5 +1,5 @@
 /*BARRA DE NAVEGACIÓN*/
-/*const body = document.body;
+const body = document.body;
 const scrollUp = "scroll-up";
 const scrollDown = "scroll-down";
 let lastScroll = 0;
@@ -24,23 +24,20 @@ window.addEventListener("scroll", () => {
       body.classList.add(scrollUp);
     }
     lastScroll = currentScroll;
-  });*/
+  });
 
-  ubiP = window.pageYOffset;
+ /* ubiP = window.pageYOffset;
   window.onscroll = function() {
       let UbiA = window.pageYOffset;
       if(ubiP > UbiA){
           document.getElementById('nav').style.top = '0px';
-          /*console.log('Ubicacion Principal')
-          console.log(ubiP)
-          console.log('desplazamiento')
-          console.log(UbiA)*/
+         
       }
       else{
           document.getElementById('nav').style.top = '-95px';
       }
       ubiP = UbiA;
-    }
+    }*/
   
 /*BOTÓN MÓVIL*/
 function toggleMenu() {

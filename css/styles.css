@@ -70,17 +70,19 @@ a.nav-link{
 
 /*TRANSICIONES Y CLASES AUTOMÁTICAS EN EL NAVBAR*/
 .navbar{
-  /*transition: transform 0.4s;*/
+  /*transition: transform 0.4s;
   transition: top 0.5s;
+  */
+
 }
 
-/*.scroll-down .navbar {
+.scroll-down .navbar {
   transform: translate3d(0, -100%, 0);
 }
 
 .scroll-up .navbar {
   transform: none;
-}*/
+}
 /*TRANSICIONES Y CLASES AUTOMÁTICAS EN EL NAVBAR*/
 
 /*EFECTO PARALLAX*/
