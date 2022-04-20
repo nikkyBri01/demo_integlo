@@ -256,6 +256,7 @@ a.nav-link{
 	margin: 0 15px;
 	border-radius: 2px;
   margin-left: 150px;
+  animation: scrolling 10s linear infinite;
 }
 .cell img{
 	width: 250px;
