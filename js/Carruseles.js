@@ -28,9 +28,9 @@ var flkty = new Flickity( '.main-carousel', {
   freeScroll: true,
   prevNextButtons: false,
   pageDots: false,
+  autoPlay: 2000,
   pauseAutoPlayOnHover: true
 });
-
 
 flkty.on('pointerUp', function (event, pointer) {
   flkty.player.play();
