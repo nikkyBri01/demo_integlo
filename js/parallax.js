@@ -26,7 +26,7 @@ $(document).ready(function(){
             });
         });
 	}
-    // Si trabajamos con una imagen desactivamos el background-size:cover para dispositivos pequeños;
+    //DesactivaR el background-size:cover para dispositivos pequeños;
 	if (ancho <= 992){
 		$('parallax').css({
 			'background-size': 'initial'

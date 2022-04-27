@@ -25,27 +25,14 @@ window.addEventListener("scroll", () => {
     }
     lastScroll = currentScroll;
   });
-
- /* ubiP = window.pageYOffset;
-  window.onscroll = function() {
-      let UbiA = window.pageYOffset;
-      if(ubiP > UbiA){
-          document.getElementById('nav').style.top = '0px';
-         
-      }
-      else{
-          document.getElementById('nav').style.top = '-95px';
-      }
-      ubiP = UbiA;
-    }*/
   
 /*BOTÓN MÓVIL*/
 function toggleMenu() {
     var menu = document.getElementById('navbarNav');    
-    if(menu.style.display == "block") { // if is menuBox displayed, hide it
+    if(menu.style.display == "block") { 
       menu.style.display = "none";
     }
-    else { // if is menuBox hidden, display it
+    else { 
       menu.style.display = "block";
     }
   }

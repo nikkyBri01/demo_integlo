@@ -21,19 +21,5 @@ var carousel = new bootstrap.Carousel(myCarousel2, {
   pause: false
 })
 
-//Flickity
-var flkty = new Flickity( '.main-carousel', {
-  cellAlign: 'left',
-  wrapAround: true,
-  freeScroll: true,
-  prevNextButtons: false,
-  pageDots: false,
-  autoPlay: 2000,
-  pauseAutoPlayOnHover: true
-});
-
-flkty.on('pointerUp', function (event, pointer) {
-  flkty.player.play();
-});
 
 

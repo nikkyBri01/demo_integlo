@@ -317,13 +317,13 @@ a.nav-link{
   background: rgba(226, 220, 224, 0.15);
   border-radius: 2px;
   }
-.contact-forms .btn {
+.contact-forms .order {
 border-radius: 0;
 width: 100%;
 text-align: left;
 margin-bottom: 10px;
 }
-.btn-primary {
+.order {
 color: #fff !important;
 position: relative;
 font-weight: bold;
@@ -332,12 +332,7 @@ border: none !important;
 box-shadow: 0px -2px 0px 0px rgba(0, 0, 0, 0.2) inset;
 }
 
-h5.order a{
-    color:white;
-    text-decoration: none;
-}
-
-.contact-forms .btn {
+.contact-forms .order {
 border-radius: 0;
 width: 100%;
 text-align: center;
@@ -350,6 +345,7 @@ color: white !important;
 
 .contact-forms textarea {
     height: 117px;
+    resize: none;
 }
 .contact-forms input[type="text"], 
 .contact-forms textarea {
